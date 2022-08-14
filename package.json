@@ -2,7 +2,7 @@
 	"name": "portfolio",
 	"version": "0.0.1",
 	"scripts": {
-		"deploy": "node ./gh-pages.js",
+		"deploy": "gh-pages -d build -t true",
 		"dev": "vite dev",
 		"build": "vite build",
 		"package": "svelte-kit package",
