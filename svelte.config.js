@@ -1,7 +1,5 @@
-import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
-
-const dev = process.env.NODE_ENV === 'development';
+import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -10,23 +8,22 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
+		// target: '#svelte',
 		adapter: adapter({
-			pages: 'docs',
-			assets: 'docs',
-			domain: null,
-			jekyll: false,
-			fallback: null,
-			precompress: false
+			pages: 'build',
+			assets: 'build',
+			fallback: null
 		}),
+		// ssr: false,
+		paths: {
+			base: '/srioboo.github.io',
+		},
 		prerender: {
+			crawl: true,
+			enabled: true,
+			onError: 'continue',
 			default: true
 		},
-		paths: {
-			base: dev ? '' : '/srioboo.github.io',
-		},
-		// If you are not using a .nojekyll file, change your appDir to something not starting with an underscore.
-		// For example, instead of '_app', use 'app_', 'internal', etc.
-		appDir: 'internal',
 	}
 };
 
