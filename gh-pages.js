@@ -4,6 +4,7 @@ publish(
     'build', // path to public directory
     {
         branch: 'gh-pages',
+        message: 'feat: Auto-generated commit',
         repo: 'https://github.com/srioboo/srioboo.github.io.git', // Update to point to your repository
         user: {
             name: 'Salvador Rioboo', // update to use your name
