@@ -23,13 +23,14 @@ const config = {
 		paths: {
 			//base: '/srioboo.github.io',
 			base: dev ? '' : ''
-		},
+		}
+		/* provoca errore ne sveltekit v1
 		prerender: {
 			crawl: true,
 			enabled: true,
 			onError: 'continue',
 			default: true
-		}
+		}*/
 	}
 };
 
