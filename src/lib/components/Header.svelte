@@ -1,4 +1,5 @@
 <script>
+	import { _ } from "svelte-i18n"
 </script>
 
 <!-- Header -->
@@ -13,22 +14,22 @@
 
 		<!-- Nav -->
 		<nav id="nav">
-			<!-- <ul>
-				<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+			<ul>
+				<li><a href="#top" id="top-link"><span class="icon solid fa-home">{$_('header_component.nav.intro')}</span></a></li>
 				<li>
 					<a href="#portfolio" id="portfolio-link"
-						><span class="icon solid fa-th">Portfolio</span></a
+						><span class="icon solid fa-th">{$_('header_component.nav.portfolio')}</span></a
 					>
 				</li>
 				<li>
-					<a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a>
+					<a href="#about" id="about-link"><span class="icon solid fa-user">{$_('header_component.nav.about')}</span></a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="#contact" id="contact-link"
-						><span class="icon solid fa-envelope">Contact</span></a
+						><span class="icon solid fa-envelope">{$_('header_component.nav.contact')}</span></a
 					>
-				</li>
-			</ul> -->
+				</li> -->
+			</ul>
 		</nav>
 	</div>
 
@@ -40,6 +41,11 @@
 			<li>
 				<a href="https://github.com/srioboo" class="icon brands fa-github"
 					><span class="label">Github</span></a
+				>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/salvador-rioboo-naranjo/" class="icon brands fa-linkedin"
+				><span class="label">Linkedin</span></a
 				>
 			</li>
 			<!--<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>-->
