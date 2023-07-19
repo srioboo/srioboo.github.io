@@ -1,15 +1,15 @@
 <!-- Contact -->
+<script>
+    import { _ } from 'svelte-i18n'
+</script>
 <section id="contact" class="four">
     <div class="container">
 
         <header>
-            <h2>Contact</h2>
+            <h2>{$_('contact_page.title')}</h2>
         </header>
 
-        <p>Elementum sem parturient nulla quam placerat viverra
-            mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-            donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-            orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+        <p>{ $_('contact_page.content') }</p>
 
         <form method="post" action="#">
             <div class="row">
