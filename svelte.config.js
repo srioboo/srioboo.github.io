@@ -17,7 +17,8 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: null
+			fallback: null,
+			strict: false,
 		}),
 		// ssr: false,
 		paths: {
