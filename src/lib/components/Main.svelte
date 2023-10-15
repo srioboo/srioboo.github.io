@@ -8,7 +8,7 @@
 <!-- Main -->
 <div id="main">
 	<Intro />
-	<Portfolio />
-	<About />
+	<!-- <Portfolio /> -->
+	<!-- <About /> -->
 	<!-- <Contact /> -->
 </div>
