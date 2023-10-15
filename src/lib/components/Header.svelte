@@ -1,10 +1,14 @@
 <script>
 	import { _ } from "svelte-i18n"
+	// TODO - corregir import LocaleSwitcher from './sections/LocaleSwitcher.svelte';
 </script>
 
 <!-- Header -->
 <div id="header">
 	<div class="top">
+		<!-- TODO - corregir
+		<LocaleSwitcher value={$locale} on:locale-changed={e => setupI18n({ withLocale: e.detail }) }/>
+		-->
 		<!-- Logo -->
 		<div id="logo">
 			<span class="image avatar48"><img src="/images/avatar.jpg" alt="" /></span>
@@ -16,14 +20,14 @@
 		<nav id="nav">
 			<ul>
 				<li><a href="#top" id="top-link"><span class="icon solid fa-home">{$_('header_component.nav.intro')}</span></a></li>
-				<li>
+				<!-- <li>
 					<a href="#portfolio" id="portfolio-link"
 						><span class="icon solid fa-th">{$_('header_component.nav.portfolio')}</span></a
 					>
 				</li>
 				<li>
 					<a href="#about" id="about-link"><span class="icon solid fa-user">{$_('header_component.nav.about')}</span></a>
-				</li>
+				</li> -->
 				<!-- <li>
 					<a href="#contact" id="contact-link"
 						><span class="icon solid fa-envelope">{$_('header_component.nav.contact')}</span></a
