@@ -11,14 +11,14 @@ const dev = process.env.NODE_ENV === 'development';
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	preprocess: vitePreprocess(),
+	preprocess: [vitePreprocess({})],
 
 	kit: {
 		// target: '#svelte',
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: null,
+			fallback: null
 			// strict: false,
 		}),
 		// ssr: false,

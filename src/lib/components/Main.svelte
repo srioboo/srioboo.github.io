@@ -6,7 +6,7 @@
 </script>
 
 <!-- Main -->
-<div id="main">
+<div id="main" class="w-3/4">
 	<Intro />
 	<!-- <Portfolio /> -->
 	<!-- <About /> -->
