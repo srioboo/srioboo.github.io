@@ -25,9 +25,6 @@ devDependencies:
   '@neoconfetti/svelte':
     specifier: ^1.0.0
     version: 1.0.0
-  '@picocss/pico':
-    specifier: ^1.5.10
-    version: 1.5.10
   '@playwright/test':
     specifier: ^1.28.1
     version: 1.39.0
@@ -1072,10 +1069,6 @@ packages:
     resolution: {integrity: sha512-D4iHGTdAnEEVsB8fl95m1hiz7D5YiRdQ9b/OEb3BYRVwbLsGHcRVPz+u+BgRLNk0Q0/4iZCBqDN96j2XNxfXrA==}
     dependencies:
       '@octokit/openapi-types': 18.1.1
-    dev: true
-
-  /@picocss/pico@1.5.10:
-    resolution: {integrity: sha512-+LafMsrwPxXQMk6sI///TmSInCwwZmq+K7SikyL3N/4GhhwzyPC+TQLUEqmrLyjluR+uIpFFcqjty30Rtr6GxQ==}
     dev: true
 
   /@playwright/test@1.39.0:
