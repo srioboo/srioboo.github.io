@@ -21,7 +21,6 @@
 		"@commitlint/config-conventional": "^17.8.0",
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
-		"@picocss/pico": "^1.5.10",
 		"@playwright/test": "^1.28.1",
 		"@release-it/conventional-changelog": "^7.0.2",
 		"@skeletonlabs/skeleton": "^2.3.0",
