@@ -39,15 +39,15 @@
 
 	<div class="bottom">
 		<!-- Social Icons -->
-		<ul class="icons">
+		<ul class="icons text-center">
 			<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
 			<!--<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>-->
-			<li>
+			<li class="inline-block">
 				<a href="https://github.com/srioboo" class="icon brands fa-github"
 					><span class="label">Github</span></a
 				>
 			</li>
-			<li>
+			<li  class="inline-block">
 				<a href="https://www.linkedin.com/in/salvador-rioboo-naranjo/" class="icon brands fa-linkedin"
 				><span class="label">Linkedin</span></a
 				>
