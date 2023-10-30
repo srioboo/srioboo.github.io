@@ -4,7 +4,7 @@
 </script>
 
 <!-- Header -->
-<div id="header" class="w-1/5 text-white text-right flex flex-col justify-between bg-slate-900 overflow-y-auto top-0">
+<div id="header" class="w-80 text-white text-right flex flex-col justify-between bg-slate-900 top-0 fixed left-0 h-full">
 	<div class="flex-grow">
 		<!-- TODO - corregir
 		<LocaleSwitcher value={$locale} on:locale-changed={e => setupI18n({ withLocale: e.detail }) }/>
@@ -12,13 +12,13 @@
 		<!-- Logo -->
 		<div id="logo" class="relative mt-7 mr-6 ml-6 mb-6 cursor-default">
 			<span class="relative top-0 left-0 mt-0 mr-0 ml-0 mb-2 inline-block"><img src="/images/avatar.jpg" alt="" class="block"/></span>
-			<h1 id="title" class="relative text-white text-xs font-semibold">Salvador Rioboo</h1>
-			<p class="">Full Stack Developer</p>
+			<h1 id="title" class="relative text-white text-lg font-semibold m-0 p-0">Salvador Rioboo</h1>
+			<p class="text-xs">Full Stack Developer</p>
 		</div>
 
 		<!-- Nav -->
-		<nav id="nav" class="block align-baseline">
-			<ul class="list-none pl-0 mb-0">
+		<nav id="nav" class="block align-baseline m-0 p-0 text-right">
+			<ul class="list-none p-0 m-0 align-baseline text-right">
 				<li class="pl-0"><a href="#top" id="top-link" class="text-sm pt-2 pb-2 no-underline"><span class="icon solid fa-home pr-9 relative block text-sm">{$_('header_component.nav.intro')}</span></a></li>
 				<!-- <li>
 					<a href="#portfolio" id="portfolio-link"
