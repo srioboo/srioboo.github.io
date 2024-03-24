@@ -1,24 +1,44 @@
 {
-	"name": "astro",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro check && astro build",
-		"preview": "astro preview",
-		"astro": "astro"
-	},
-	"dependencies": {
-		"@astrojs/check": "^0.3.4",
-		"@astrojs/mdx": "^2.0.3",
-		"@astrojs/rss": "^4.0.1",
-		"@astrojs/sitemap": "^3.0.4",
-		"@astrojs/svelte": "^5.0.3",
-		"@astrojs/tailwind": "^5.1.0",
-		"astro": "^4.0.8",
-		"svelte": "^4.2.8",
-		"tailwindcss": "^3.4.0",
-		"typescript": "^5.3.3"
-	}
+  "name": "portfolio",
+  "type": "module",
+  "version": "0.3.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "test": "playwright test",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint .",
+    "format": "prettier --write --plugin-search-dir=. .",
+    "commitlint": "commitlint --edit",
+    "release": "release-it",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.4",
+    "@astrojs/mdx": "^2.0.3",
+    "@astrojs/rss": "^4.0.1",
+    "@astrojs/sitemap": "^3.0.4",
+    "@astrojs/svelte": "^5.0.3",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.0.8",
+    "svelte": "^4.2.8",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3"
+  },
+  "module": "index.ts",
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@playwright/test": "^1.42.1",
+    "@types/bun": "latest",
+    "husky": "^9.0.11",
+    "playwright": "latest",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "release-it": "^17.1.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
 }
