@@ -1,6 +1,7 @@
 ---
 id: notas-tmux
 title: 'Tmux: gestor multiventana para consola'
+heroImage: '/blog-placeholder-5.jpg'
 name: notas-tmux
 # layout: post
 author:

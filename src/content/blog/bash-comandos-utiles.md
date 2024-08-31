@@ -1,7 +1,7 @@
 ---
 id: bash-comandos-utiles
 title: 'Bash: comandos utiles'
-img: https://res.cloudinary.com/salrion/images/{{trans}}/salrionblog/nombre-imagen-real/nombre-descriptivo-imagen.jpg
+# img: https://res.cloudinary.com/salrion/images/{{trans}}/salrionblog/nombre-imagen-real/nombre-descriptivo-imagen.jpg
 heroImage: https://res.cloudinary.com/salrion/image/upload/w_810,q_90,f_auto/salrionblog/macbook.jpg
 alt: texto alternativo imagen
 # layout: post

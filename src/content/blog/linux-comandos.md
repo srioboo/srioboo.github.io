@@ -1,6 +1,7 @@
 ---
 id: comandos-linux-unix
 title: Comandos Linux/Unix
+heroImage: '/blog-placeholder-5.jpg'
 alt: commandos linux unix
 # layout: post
 author:
