@@ -1,5 +1,5 @@
 // configuration i18n
-import { browser } from '$app/environment'
+// import { browser } from '$app/environment'
 import { init, register } from 'svelte-i18n';
 // import { init, register getLocaleFromHostname } from 'svelte-i18n';
 // import { init, register, getLocaleFromPathname } from 'svelte-i18n';
