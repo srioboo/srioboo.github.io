@@ -12,6 +12,19 @@ const posts = (await getCollection('blog')).sort(
 );
 ---
 
+<style>
+	section {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	section div {
+		margin: 5px;
+		width: 30%;
+	}
+</style>
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -24,21 +37,21 @@ const posts = (await getCollection('blog')).sort(
 			<p>Full Stack Developer de la ciudad de Málaga</p>
 
 			<section>
-				<ul>
+				<!-- <ul> -->
 					{
 						posts.map((post) => (
-							<li>
+							<div>
 								<a href={`/blog/${post.slug}/`}>
-									<!-- <img width={720} height={360} src={post.data.heroImage} alt="" /> -->
+									<img width={360} height={360} src={post.data.heroImage} alt="" />
 									<h6 class="title">{post.data.title}</h6>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
 									</p>
 								</a>
-							</li>
+							</div>
 						))
 					}
-				</ul>
+				<!-- </ul> -->
 			</section>
 		</main>
 		<Footer />
