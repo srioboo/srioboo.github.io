@@ -1,16 +1,16 @@
 ---
-title: pretier
+title: prettier
 description: prettier
 pubDate: 9 10 2024
 ---
 
-- [ ] documentar cambio de linea con prettier 
+- [ ] documentar cambio de linea con prettier
 
 ```
 # instalar con
-npm install --global prettier      
+npm install --global prettier
 
-# o bien 
+# o bien
 px prettier --end-of-line crlf --write .
 
 # y lanzar
@@ -18,8 +18,7 @@ prettier --end-of-line lf --write .
 
 
 # con git
-git config core.autocrlf false 
-git rm --cached -r . 
+git config core.autocrlf false
+git rm --cached -r .
 git reset --hard
-```      
-
+```
