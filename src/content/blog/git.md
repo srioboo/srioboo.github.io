@@ -2,7 +2,7 @@
 id: notas-de-git
 title: 'Git: control de versiones'
 pubDate: 'May 04 2020'
-heroImage: https://res.cloudinary.com/salrion/image/upload/w_810,q_90,f_auto/salrionblog/git.jpg
+heroImage: https://res.cloudinary.com/salrion/image/upload/w_310,h_150,q_90,f_auto/salrionblog/git.jpg
 alt: Git
 # layout: post
 author:
