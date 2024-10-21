@@ -1,6 +1,6 @@
 ---
 id: apuntes-de-vim
-title: 'Vim: Apuntes de Vim y Neovim, el editor multiconsola'
+title: 'Vim: Apuntes de Vim y Neovim, el editor de consola'
 heroImage: https://res.cloudinary.com/salrion/images/w_310,h_150,q_90,f_auto/salrionblog/rock/apuntes-de-vim.jpg
 alt: vim y neovim
 # layout: post
