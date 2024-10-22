@@ -1,17 +1,18 @@
 ---
-title: 'Commitlint: instalación en proyectos web'
-description: Instalación de Commitlint en cualquier framework
+title: Commitlint, comprueba que tus commit tienen el formato correcto. Instalación en proyectos web
+description: Guía de instalación de Commitlint para cualquier framework, para revisar el formato correcto de los links y conseguir un log limpio y útil
 id: usar-commitlint-en-proyectos
 img: https://res.cloudinary.com/salrion/images/{{trans}}/salrionblog/nombre-imagen-real/nombre-descriptivo-imagen.jpg
 alt: texto alternativo imagen
 date: 28 10 2023
 pubDate: 10 28 2023
 year:
-  - '2023'
+  - "2023"
 author: '{"name":"SRN"}'
-# layout: post
 ---
+## ¿Qué es Commitlint?
 
+Commitlint revisa la estrucutura de los commit para que estos tengan un formato correcto, si no tienen el formato correcto no te permitirá realizar el commit. Esto es una buena opción en entornos colaborativos, ya que permite que se lleve una estandarización en los commits, usando por ejemplo, conventional commits, y consiguiendo así un log más limpio y útil.
 ## Instalar con pnpm
 
 ```sh
@@ -49,7 +50,9 @@ echo "hola mundo" | commitlint
 
 ## Añadir un hook con husky
 
-primero instalar [[husky]]
+Esto permite la automatización del proyecto, y evita que se creen commits incorrectos.
+
+Primero es necesario instalar [[husky]]
 
 ```sh
 npx husky add .husky/commit-msg  'npx --no -- commitlint --edit ${1}'

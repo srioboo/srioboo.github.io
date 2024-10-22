@@ -1,9 +1,8 @@
 ---
-id: apuntes-de-vim
-title: 'Vim: Apuntes de Vim y Neovim, el editor de consola'
+id: apuntes-de-neovim
+title: NeoVim/Vim, apuntes para el uso del editor de consola
 heroImage: https://res.cloudinary.com/salrion/images/w_310,h_150,q_90,f_auto/salrionblog/rock/apuntes-de-vim.jpg
 alt: vim y neovim
-# layout: post
 author:
   name: SRN
 date: 2016-06-06

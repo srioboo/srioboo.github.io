@@ -368,6 +368,16 @@ Regla memotécnica `rebase == ponme en esta rama lo que hay en develop`
 
    `git push` , indicar `--force` de ser necesario
 
+## cherry pick 
+
+Permite llevar commits de una rama a otra, se realiza desde el commit más antiguo al nuevo desde la rama a la que quiero añadir los commits
+
+```shell
+git cherry-pick 4150415^..952015
+```
+
+ en el ejemplo se realizaría desde el 4150415 al 952015
+
 ### Referencias
 
 [Atlassian Git español](https://www.atlassian.com/es/git) (es)

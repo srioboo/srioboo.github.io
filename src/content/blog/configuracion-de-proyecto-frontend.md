@@ -13,11 +13,11 @@ years: '{"year": 2023}'
 
 Configuraciones que son esenciales o al menos interesantes de tener para un nuevo proyecto.
 
-## Husky configuración para monorepo s
+## Husky configuración para monorepos
 
 #### husky Instalación
 
-Para instarlar husky en un monorepo, ejecutar lo siguiente en la carpeta raíz
+Para instalar husky en un monorepo, ejecutar lo siguiente en la carpeta raíz
 
 ```shell
 npx husky install

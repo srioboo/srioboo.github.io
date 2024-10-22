@@ -1,14 +1,13 @@
 ---
-id: comandos-linux-unix
-title: Comandos Linux/Unix
-heroImage: '/blog-placeholder-5.jpg'
-alt: commandos linux unix
-# layout: post
+id: comandos-shell-linux-unix-mac
+title: Comandos del shell Linux/Unix/Mac
+description: Tabla con los comandos más útiles en Linux/Unix para usar en el terminal
+heroImage: /blog-placeholder-5.jpg
+alt: commandos linux unix mac
 author:
   name: SRN
 date: 2021-03-06
 year: 2021
-description: Tabla con los comandos más útiles en Linux/Unix para usar en el terminal
 pubDate: Mar 06 2021
 ---
 
@@ -114,8 +113,6 @@ Podemos filtrar con grep:
 find directorio | grep cadena_a_buscar
 ```
 
-TODO -> más opciones
-
 ## Filtrado de ficheros con AWK
 
 AWK es una herramienta de procesamiento de patrones en líneas de texto. Su utilización estándar es la de filtrar ficheros o salida de comandos de UNIX, tratando las líneas para, por ejemplo, mostrar una determinada información sobre las mismas.
@@ -152,7 +149,12 @@ awk -F, 'a[$1$2$3$4]++{print $0}' nombre_archivo.csv
   - diff -y '/home/joan/Escritorio/
 
 Ver las diferencias entre 2 directorios o 2 ficheros/arc
+```shell
 diff a.csv b.csv --suppress-common-lines -y --color
+```
 
-Con un grep
+Con grep
+```shell
 diff -u a.csv b.csv | grep -E "^\\+" > new.csv
+```
+

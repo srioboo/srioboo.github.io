@@ -87,6 +87,5 @@ Podemos customizarlo creando un `.versionrc` en la carpeta raíz del proyecto,
 
 > You can see more options in [Conventional Changelog Configuration Spec](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.1.0/README.md).
 
-## Github
 
 
