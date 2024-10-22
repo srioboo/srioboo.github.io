@@ -57,6 +57,12 @@ const posts = (await getCollection('blog')).sort(
 				color: rgb(var(--black));
 				line-height: 1;
 			}
+			.description {
+				margin: 0.5rem 0 0 0;
+				color: rgb(var(--gray));
+				line-height: 1;
+				font-size: smaller;
+			}
 			.date {
 				margin: 0;
 				color: rgb(var(--gray));
@@ -96,6 +102,7 @@ const posts = (await getCollection('blog')).sort(
 								<a href={`/blog/${post.slug}/`}>
 									<img width={310} height={150} src={post.data.heroImage} alt="" />
 									<h4 class="title">{post.data.title}</h4>
+									<p class="description">{post.data.description}</p>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
 									</p>
