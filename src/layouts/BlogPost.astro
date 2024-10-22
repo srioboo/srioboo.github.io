@@ -22,11 +22,19 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.hero-image {
 				width: 100%;
 			}
-			.hero-image img {
+			/* .hero-image img {
 				display: block;
 				margin: 0 auto;
 				border-radius: 12px;
 				box-shadow: var(--box-shadow);
+			}*/
+			.hero-image {
+				display: block;
+				margin: 0 auto;
+				border-radius: 12px;
+				box-shadow: var(--box-shadow);
+				background: no-repeat url("/blog-placeholder-5.jpg") center center;
+				background-size: 1180px 510px;
 			}
 			.prose {
 				width: 720px;
@@ -39,10 +47,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				margin-bottom: 1em;
 				padding: 1em 0;
 				text-align: center;
-				line-height: 1;
+				line-height: 1;				
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0;
+				color: white;
 			}
 			.date {
 				margin-bottom: 0.5em;
@@ -59,9 +68,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
+				<!-- 	{heroImage && <img width={1020} height={510} src={heroImage} alt="" />} -->
 					<div class="title">
 						<div class="date">
 							<FormattedDate date={pubDate} />
@@ -74,8 +81,24 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 							}
 						</div>
 						<h1>{title}</h1>
-						<hr />
+						<!--<hr /> -->
 					</div>
+				</div>
+				<div class="prose">
+					<!--<div class="title">
+						<div class="date">
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+						<h1>{title}</h1>  
+						<hr />
+					</div>  -->
 					<slot />
 				</div>
 			</article>
