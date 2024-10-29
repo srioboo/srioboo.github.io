@@ -378,6 +378,13 @@ git cherry-pick 4150415^..952015
 
  en el ejemplo se realizaría desde el 4150415 al 952015
 
+### Configuración
+
+Autoconfiguración de ramas remotas, si tu rama local no está conectada o es una rama nueva, puedes autoconfigurar el "--set-upstream" automáticamente en la configuración con:
+```bash
+git config --global push.autoSetupRemote true
+```
+
 ### Referencias
 
 [Atlassian Git español](https://www.atlassian.com/es/git) (es)
