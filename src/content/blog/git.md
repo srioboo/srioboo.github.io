@@ -385,6 +385,16 @@ Autoconfiguración de ramas remotas, si tu rama local no está conectada o es un
 git config --global push.autoSetupRemote true
 ```
 
+### Correcciones de email usuario
+
+Si por alguna razón necesitas cambiar el email del usuario en el historial del log, la siguiente consulta realizará esa tarea
+
+```shell
+git rebase -r <commit-hash> \
+    --exec 'if [ "$(git log -n 1 --format="%ae")" = "youremail@something.com" ]; then git commit --amend --no-edit --reset-author --date="$(git log -n 1 --format=%aD)"; fi'
+```
+
+Hay que indicar el correo que quieres  buscar para cambiar y el hash desde el cual quieres hacer la gestión, también mantendrá la fecha que se creó en el commit.
 ### Referencias
 
 [Atlassian Git español](https://www.atlassian.com/es/git) (es)
