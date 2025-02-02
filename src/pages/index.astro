@@ -11,7 +11,7 @@ const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 ---
-
+<!-- 
 <style>
 	section {
 		display: flex;
@@ -24,6 +24,7 @@ const posts = (await getCollection('blog')).sort(
 		width: 30%;
 	}
 </style>
+ -->
 
 <!doctype html>
 <html lang="en">
@@ -33,9 +34,6 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<hq>Hola! soy Salvador Rioboo.</hq>
-			<p>Full Stack Developer de la ciudad de Málaga</p>
-
 			<!-- <section>
 					{
 						posts.map((post) => (
@@ -51,6 +49,36 @@ const posts = (await getCollection('blog')).sort(
 						))
 					}
 			</section> -->
+
+			<section class="flex flex-row w-full flex-wrap">
+				<h1>Hola! soy Salvador Rioboo.</h1>
+
+				<div class="text-xl w-full">
+					Full Stack Developer</div>
+				<div class="w-full">
+					Desarrollador web durante 15 años usando Java en el backend y múltiples tecnologías en el frontend.
+				</div>
+
+				<!-- <ul>
+					<li>
+						*   🌍  I'm based in Málaga
+					</li>
+				</ul>  -->
+
+				<h5 class="w-full"> Habilidades: </h5>
+				<p class="flex flex-direction-row">
+					<a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="36" height="36" alt="Java" /></a>
+					<a href="https://vuejs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vuejs-colored.svg" width="36" height="36" alt="Vue" /></a>
+					<a href="https://nuxtjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nuxtjs-colored.svg" width="36" height="36" alt="Nuxtjs" /></a>
+					<a href="https://angular.io/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/angularjs-colored.svg" width="36" height="36" alt="Angular" /></a>
+					<a href="https://sass-lang.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg" width="36" height="36" alt="Sass" /></a>
+					<a href="https://svelte.dev/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/svelte-colored.svg" width="36" height="36" alt="Svelte" /></a>
+					<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a>
+					<a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a>
+					<a href="https://www.oracle.com/uk/index.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/oracle-colored.svg" width="36" height="36" alt="Oracle" /></a>
+				</p>
+			</section>
+
 		</main>
 		<Footer />
 	</body>
