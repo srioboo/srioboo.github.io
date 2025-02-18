@@ -33,7 +33,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				margin: 0 auto;
 				border-radius: 12px;
 				box-shadow: var(--box-shadow);
-				background: no-repeat url("/blog-placeholder-5.jpg") center center;
+				/* background: no-repeat url("/blog-placeholder-5.jpg") center center; */
+				background: #008383bf;
 				background-size: 100%;
 			}
 			.prose {
@@ -56,6 +57,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.date {
 				margin-bottom: 0.5em;
 				color: rgb(var(--gray));
+				font-weight: bolder;
 			}
 			.last-updated-on {
 				font-style: italic;
