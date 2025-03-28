@@ -1,6 +1,6 @@
 ---
 id: comandos-shell-linux-unix-mac
-title: Comandos del shell Linux/Unix/Mac
+title: 'Shell: Comandos para Linux/Unix/Mac'
 description: Tabla con los comandos más útiles en Linux/Unix para usar en el terminal
 heroImage: /blog-placeholder-5.jpg
 alt: commandos linux unix mac
@@ -133,14 +133,6 @@ awk -F, 'a[$1$2$3$4]++{print $0}' nombre_archivo.csv
 
 > [!INFO] >http://www.sromero.org/wiki/linux/aplicaciones/uso_de_awk
 
-## Otros
-
-- **duf** como df pero gráfico ncurses
-- **btop** como htop o top pero más visual
-- **neofetch** información del sistema
-- **sed** puede búscar, reemplazar, insertar y borrar. Lo más común es buscar y reemplazar. Permite editar archivos sin abrirlos.
-- **curl** curl -sS -k -u $SPI_CREDS -X GET $JOBSTATUS_UR
-
 ## Diferencias entre archivos
 
 - diff
@@ -157,4 +149,49 @@ Con grep
 ```shell
 diff -u a.csv b.csv | grep -E "^\\+" > new.csv
 ```
+
+## gzip
+
+Descomprimir un archivo
+```bash
+gzip -d un_archivo_comprimido.txt.gz
+```
+
+Comprimir una serie de archivos (sustituyendo el archivo original)
+```bash
+gzip *.xml
+```
+
+Sustituye todos los xml por xml.gz comprimiéndolos
+
+## SED
+
+Sustituir una expresión regular por un texto vacío
+
+```bash
+sed -i -E "s/\/([a-z0-9]){4}\///" texto_de_pruebas.txt
+```
+
+Donde:
+
+- _-E_ -> indica que se está usando una expresión regular
+- _-i_ -> indica que se va a sobreescribir el archivo
+
+# Comprobar puertos en uso en linux
+
+```shell
+sudo lsof -i -P -n | grep LISTEN
+sudo netstat -tulpn | grep LISTEN
+sudo ss -tulpn | grep LISTEN
+sudo lsof -i:22 ## see a specific port such as 22 ##
+sudo nmap -sTU -O IP-address-Here
+```
+
+## Otros
+
+- **duf** como df pero gráfico ncurses
+- **btop** como htop o top pero más visual
+- **neofetch** información del sistema
+- **sed** puede búscar, reemplazar, insertar y borrar. Lo más común es buscar y reemplazar. Permite editar archivos sin abrirlos.
+- **curl** curl -sS -k -u $SPI_CREDS -X GET $JOBSTATUS_UR
 
