@@ -4,7 +4,6 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-@import "tailwindcss";
 
 :root {
 	--accent: #2337ff;
@@ -161,3 +160,5 @@ td {
 	border: 0.5px solid grey;
 	padding: 0.3em;
 }
+
+@import "tailwindcss";
