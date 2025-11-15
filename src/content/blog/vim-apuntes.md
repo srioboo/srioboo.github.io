@@ -151,3 +151,31 @@ Ej.- elminar 6 palabra d6w (o 6dw) borra seis palabras
 | ctrl+ww         | cambiar entre ventanas                             | windows sWitch          |
 | ctrl+wq         | cerrar ventana                                     | windows quit            |
 | ctrl+wv         | dividir ventana verticalmente                      | windows split Verticaly |
+
+## Config base vim
+
+Crear un .vimrc en $HOME
+
+```lua
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax on		" activate vim syntax coloring
+set number		" enable numbers 'set nu' for short
+set ru			" enable row numbers
+set mouse=a		" allow cursor movement by clicking
+" set expandtab		" use spaces instead of tabs
+set smarttab		" be smart when using tabs 
+set shiftwidth=4	" set (1 tab == 4 spaces)
+" set tabstop=4
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Indentation
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set autoindent		" enable autoindent 'set ai' for short
+set si			" smart indent
+set wrap		" enable lines wrapping
+" set cindent		" enable c lang indent
+set tabstop=4		" this enable vscode format like alignement
+```
+

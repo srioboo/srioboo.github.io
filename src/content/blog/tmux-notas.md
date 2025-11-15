@@ -14,6 +14,39 @@ pubDate: Apr 28 2017
 
 Tmux permite crear en la consola nuevos paneles y ventanas de forma que se tiene una configuración "multiconsola" con la que poder ser más productivo.
 
+## Config base tmux
+
+Crear un .tmux.conf en $HOME
+
+```bash
+# TMUX base
+
+###
+## base
+###
+
+## Prefix key
+set -g prefix C-a
+set -g prefix2 C-b
+
+# history limit and mouse
+set -g mouse on
+set -g history-limit 10000
+
+###
+## optional
+###
+
+## Status position
+set -g status-position top
+
+## Base number for pane and windows
+set -g base-index 1
+setw -g pane-base-index 1
+set -g renumber-windows on
+
+```
+
 ## tmux notas
 
 | **Tecla**                   | **Acción**                            | **Memotécnica** |
