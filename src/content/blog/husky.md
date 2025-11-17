@@ -2,6 +2,8 @@
 title: Husky, realiza acciones antes de subir tu código
 description: Instalación husky para permitir realizar acciones previas a los commits, push y otras acciones de git
 pubDate: 9 12 2024
+tags:
+  - porfolio
 ---
 
 

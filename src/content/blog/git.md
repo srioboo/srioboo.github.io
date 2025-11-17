@@ -1,16 +1,16 @@
 ---
 id: notas-de-git
-title: 'Git: control de versiones'
-pubDate: 'May 04 2020'
+title: "Git: control de versiones"
+pubDate: May 04 2020
 heroImage: https://res.cloudinary.com/salrion/image/upload/w_310,h_150,q_90,f_auto/salrionblog/git.jpg
 alt: Git
-# layout: post
 author:
   name: SRN
-year: 2020-04-04
-description: Pequeños apuntes y anotaciones sobre Git y GitFlow, uso, comandos
-  principales e inicialización de una de las herramientas de control de
-  versiones más populares.
+year:
+  - 2020-04-04
+description: Pequeños apuntes y anotaciones sobre Git y GitFlow, uso, comandos principales e inicialización de una de las herramientas de control de versiones más populares.
+tags:
+  - porfolio
 ---
 
 Git permite a grupos de personas trabajar en los mismos documentos o código al mismo tiempo sin pisarse unos a otros. Al igual que CVS o Subversion es un control de versiones aunque en este caso es distribuido permitiendo que cada usuario tenga una copia local del repositorio.

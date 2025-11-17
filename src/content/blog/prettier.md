@@ -2,6 +2,8 @@
 title: prettier
 description: prettier
 pubDate: 9 10 2024
+tags:
+  - porfolio
 ---
 
 - [ ] documentar cambio de linea con prettier

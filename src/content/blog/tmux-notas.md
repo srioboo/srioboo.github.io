@@ -1,19 +1,19 @@
 ---
 id: notas-tmux
-title: 'Tmux: gestor multiventana para consola'
-heroImage: '/blog-placeholder-5.jpg'
+title: "Tmux: gestor multiventana para consola"
+heroImage: /blog-placeholder-5.jpg
 name: notas-tmux
-# layout: post
 author:
   name: Salrion
 date: 2017-04-28
 year: 2017
 description: Notas sobre tmux, gestión de pestañas, paneles, configuración, atajos de teclados y otras características. Herramienta de productividad para la consola.
 pubDate: Apr 28 2017
+tags:
+  - porfolio
 ---
 
 Tmux permite crear en la consola nuevos paneles y ventanas de forma que se tiene una configuración "multiconsola" con la que poder ser más productivo.
-
 ## Config base tmux
 
 Crear un .tmux.conf en $HOME
@@ -46,7 +46,6 @@ setw -g pane-base-index 1
 set -g renumber-windows on
 
 ```
-
 ## tmux notas
 
 | **Tecla**                   | **Acción**                            | **Memotécnica** |

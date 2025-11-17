@@ -8,7 +8,8 @@ author: '{"name":"SRN"}'
 date: 2023-10-12
 pubDate: 10 12 2023
 years: '{"year": 2023}'
-# layout: post
+tags:
+  - porfolio
 ---
 
 Configuraciones que son esenciales o al menos interesantes de tener para un nuevo proyecto.

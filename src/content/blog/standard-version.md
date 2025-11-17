@@ -2,6 +2,8 @@
 title: standard version
 description: standard version
 pubDate: 9 10 2024
+tags:
+  - porfolio
 ---
 
 ## Standard-version

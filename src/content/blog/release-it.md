@@ -2,6 +2,8 @@
 title: release it
 description: release it
 pubDate: 9 10 2024
+tags:
+  - porfolio
 ---
 
 https://www.npmjs.com/package/release-it

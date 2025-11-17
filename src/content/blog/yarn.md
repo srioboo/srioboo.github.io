@@ -2,6 +2,8 @@
 title: Yarn, gestión de paquetes de node
 description: Yarn para la gestión de paquetes de node
 pubDate: 9 10 2024
+tags:
+  - porfolio
 ---
 
 

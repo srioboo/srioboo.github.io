@@ -9,6 +9,8 @@ date: 2016-06-06
 year: 2016
 description: Apuntes y anotaciones sobre vim y neovim. Atajos de teclados en las diferentes opciones de edición, inserción, modo visual y memotécnica para recordar los atajos.
 pubDate: 06 06 2016
+tags:
+  - porfolio
 ---
 
 Vim y neovim son editores de consola muy versatiles, pero al ser bastante antiguo tiene sus peculiaridades, una de ellas es que está diseñado para usarse solamente con el teclado, es más, como los teclados antiguos no poseían las teclas de cursor se usaban otras teclas para moverse entre el texto. Esto hace que para emplearlo eficazmente puedes ser bastante tedioso para un usuario acostumbrado al teclado y al ratón. Sabiendo esto me cree una pequeña chuletas para conocer los atajos de teclado y el funcionamiento básico.
