@@ -338,8 +338,9 @@ git rebase -i 070e0e8d4304f953092a7375f0fdf39e41d1c6ac
 ## Crear alias
 
 ```bash
-git config --global alias.slog = "log --graph --all --topo-order --pretty='format:%h %ai %s%d (%an)'"
-
+git config --global alias.slog "log --graph --all --topo-order --pretty='format:%h %ai %s%d (%an)'"
+git config --local alias.st "status"
+git config --local alias.l "log --oneline"
 ```
 
 ## Rebase
