@@ -250,7 +250,7 @@ git rebase <branch>
 git reset --hard <commit>
 ```
 
-## Tracking path changes
+## Traqueando cambios en el path (Tracking path changes)
 
 ```bash
 # borrar el archivo del proyecto y poner en el stage los cambios para commit
@@ -263,6 +263,18 @@ git mv [existing-path] [new-path]
 git log --stat -M
 
 ```
+
+Si queremos quitar un archivo o archivos ya comiteados (ej.- .idea)
+
+```shell
+#comprobamos si existen con
+git ls-files .idea
+
+# si existen y los queremos eliminar
+git rm -r --cached .idea
+```
+
+Después se realizará el commit para eliminarlos del servidor
 
 ## Cambiar nombre de rama
 
