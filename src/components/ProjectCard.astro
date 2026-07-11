@@ -1,0 +1,57 @@
+---
+import FormattedDate from './FormattedDate.astro';
+import type { FeaturedRepo } from '../lib/github';
+
+interface Props {
+	repo: FeaturedRepo;
+}
+
+const { repo } = Astro.props;
+---
+
+<div class="project-card">
+	<h6 class="title">
+		<a href={repo.htmlUrl} target="_blank" rel="noreferrer">{repo.name}</a>
+	</h6>
+	{repo.description && <p class="description">{repo.description}</p>}
+	<p class="meta">
+		{repo.language && <span class="language">{repo.language}</span>}
+		<span class="stat">★ {repo.stars}</span>
+		<span class="stat">⑂ {repo.forks}</span>
+	</p>
+	<p class="updated">
+		Actualizado el <FormattedDate date={new Date(repo.updatedAt)} />
+	</p>
+</div>
+
+<style>
+	.project-card {
+		width: 100%;
+		padding: 1em;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 8px;
+		box-shadow: var(--box-shadow);
+	}
+	.title {
+		margin: 0 0 0.5em 0;
+	}
+	.title a {
+		text-decoration: none;
+	}
+	.description {
+		color: rgb(var(--gray-dark));
+		margin-bottom: 0.5em;
+	}
+	.meta {
+		display: flex;
+		gap: 1em;
+		color: rgb(var(--gray));
+		font-size: 0.9em;
+		margin-bottom: 0.25em;
+	}
+	.updated {
+		color: rgb(var(--gray));
+		font-size: 0.85em;
+		margin-bottom: 0;
+	}
+</style>
