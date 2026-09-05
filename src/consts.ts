@@ -3,3 +3,5 @@
 
 export const SITE_TITLE = 'SRN';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
+
+export const FEATURED_REPOS = ['srioboo/srioboo'];

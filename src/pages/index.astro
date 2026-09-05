@@ -6,10 +6,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
+import { ParseStatus } from 'astro:schema';
+import ProjectCard from '../components/ProjectCard.astro';
+import { getFeaturedRepos } from '../lib/github';
+import { FEATURED_REPOS } from '../consts';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
+
+const projects = await getFeaturedRepos(FEATURED_REPOS);
 ---
 
 <style>
@@ -114,6 +120,11 @@ const posts = (await getCollection('blog')).sort(
 					<a href="https://go.dev/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/srioboo/srioboo/main/assets/GoLang.svg" width="36" height="36" alt="Golang" /></a>
 					<a href="https://kotlinlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/srioboo/srioboo/main/assets/Kotlin-Light.svg" width="36" height="36" alt="Kotlin" /></a>
 				</p>
+			</section>
+
+			<section class="flex flex-row w-full flex-wrap">
+				<h5 class="w-full">Proyectos</h5>
+				{projects.map((repo) => <ProjectCard repo={repo} />)}
 			</section>
 
 		</main>
