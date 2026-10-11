@@ -408,6 +408,56 @@ git rebase -r <commit-hash> \
 ```
 
 Hay que indicar el correo que quieres  buscar para cambiar y el hash desde el cual quieres hacer la gestión, también mantendrá la fecha que se creó en el commit.
+
+
+### Mostrar un número de commits
+
+Mostrar los últimos 5 commits en una linea y los cambios de ficheros
+
+```bash
+git log --oneline --name-status -5
+```
+
+Mostrar el historial de un fichero específico
+
+```bash
+git log --oneline --name-status -5 -- <ruta-del-fichero>
+```
+
+### Git Worktrees
+
+```shell
+# Crear un nuevo worktree
+git worktree add <ruta-del-nuevo-worktree> <rama>
+```
+
+```shell
+# Listar los worktrees
+git worktree list
+```
+
+```shell
+# Eliminar un worktree
+git worktree remove <ruta-del-worktree>
+```
+
+### Git con varios remotos
+
+tener varios repositorios remotos para actualizar el código en varios remotos y tener un backup de proyectos:
+
+```shell
+# primer remote
+git remote add origin git@bitbucket.org:usuario/repositorio.git 
+# primer remote con all
+git remote add all git@github.com:usuario/repositorio.git 
+# segundo remote con all
+git remote set-url --add all git@bitbucket.org:usuario/repositorio.git
+
+# como pushear a all?
+git push all
+
+```
+
 ### Referencias
 
 [Atlassian Git español](https://www.atlassian.com/es/git) (es)
